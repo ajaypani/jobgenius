@@ -1,2 +1,4 @@
 
 venv/*.*
+.venv/*.*
+back-end/__pycache__/rag_model.cpython-310.pyc
