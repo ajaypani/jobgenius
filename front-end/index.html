@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Job Genius</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Job Genius App</h1>
+      <form id="recommendationForm" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" required>
+        </div>
+        <div class="form-group">
+          <label for="jobTitle">Job Title:</label>
+          <input type="text" id="jobTitle" name="jobTitle" required>
+        </div>
+        <div class="form-group">
+          <label for="salary">Salary:</label>
+          <input type="number" id="salary" name="salary" required>
+        </div>
+        <div class="form-group">
+          <label for="seniorityLevel">Seniority Level:</label>
+          <input type="text" id="seniorityLevel" name="seniorityLevel" required>
+        </div>
+        <div class="form-group">
+          <label for="resume">Upload Resume (PDF, DOC, DOCX):</label>
+          <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        </div>
+        <button type="submit">Get Recommendations</button>
+      </form>
+      <div id="recommendations"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
